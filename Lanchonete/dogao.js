@@ -13,7 +13,23 @@ function calcularTotal() {
 
     const totalPedido = totalB + totalC + totalS + totalRefri3 + totalRefri2;
 
-    document.getElementById('outputTotal').innerText = `Valor total do pedido: R$ ${totalPedido.toFixed(2)}`;
+    
+    let itens = [];
+
+    if (quantB > 0) itens.push(`${quantB} Dogão Básico`);
+    if (quantC > 0) itens.push(`${quantC} Dogão Duplo`);
+    if (quantS > 0) itens.push(`${quantS} X-Salada`);
+    if (quantRefri3 > 0) itens.push(`${quantRefri3} Refrigerante 300ml`);
+    if (quantRefri2 > 0) itens.push(`${quantRefri2} Refrigerante 2L`);
+
+    let textoItens = itens.join(', ');
+
+    if (itens.length === 0) {
+        textoItens = "nenhum item foi selecionado";
+    }
+
+    document.getElementById('outputTotal').innerText = 
+        `Valor total do pedido: R$ ${totalPedido.toFixed(2)}, itens: ${textoItens}.`;
 
     document.getElementById('dogB').value = '';
     document.getElementById('dogC').value = '';

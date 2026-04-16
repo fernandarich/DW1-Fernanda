@@ -15,24 +15,24 @@
         <h2>Faça seu pedido:</h2>
         <br>
         <label for="dogB">Cachorro quente básico - R$ 22,00</label>
-        <input type="number" placeholder="Quantos?" name="dogB" id="dogB">
+        <input type="number" placeholder="Quantos?" id="dogB" min="0">
         <br>
         <label for="dogC">Cachorro quente duplo - R$ 26,00</label>
-        <input type="number" placeholder="Quantos?" name="dogC" id="dogC">
+        <input type="number" placeholder="Quantos?"" id="dogC" min="0">
         <br>
         <label for="dogS">X-Salada - R$ 29,00</label>
-        <input type="number" placeholder="Quantos?" name="dogS" id="dogS">
+        <input type="number" placeholder="Quantos?" id="dogS" min="0">
         <br>
         <label for="refri3">Refrigerante 350ml - R$ 5,00</label>
-        <input type="number" placeholder="Quantos?" name="refri3" id="refri3">
+        <input type="number" placeholder="Quantos?" id="refri3" min="0">
         <br>
         <label for="refri2">Refrigerante 1L - R$ 8,00</label>
-        <input type="number" placeholder="Quantos?" name="refri2" id="refri2">
+        <input type="number" placeholder="Quantos?" id="refri2" min="0">
     </main>
     <header>
         <input type="button" value="Fechar Pedido" onclick="calcularTotal()">
         <br><br>
-        <div id="outputTotal" style="background-color: #49ff58;">Valor total do pedido:</div>
+        <div id="outputTotal" style="background-color: #ff6600;">Valor total do pedido:</div>
         <script src="./dogao.js"></script>
     </header>
 </body>

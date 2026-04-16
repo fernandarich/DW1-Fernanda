@@ -93,3 +93,13 @@ input[type="button"]:hover {
     text-align: center;
     font-weight: bold;
 }
+
+.aviso {
+    background-color: var(--cor-erro-fundo);
+    color: var(--cor-erro-texto);
+    padding: 1rem;
+    border-radius: var(--borda-raio);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}

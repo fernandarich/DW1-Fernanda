@@ -79,5 +79,15 @@ input[type="button"]:hover {
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #003300;
+    color: #ffffff;
+}
+
+.aviso {
+    background-color: var(--cor-erro-fundo);
+    color: var(--cor-erro-texto);
+    padding: 1rem;
+    border-radius: var(--borda-raio);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
 }
